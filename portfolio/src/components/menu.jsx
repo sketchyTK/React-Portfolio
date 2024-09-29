@@ -1,32 +1,20 @@
+import { Link, useLocation } from 'react-router-dom';
 export default function Menu() {
-
+ const currentPage = useLocation().pathname;
   return (
-    <nav className="main-menu">
-      <section
-        style={{
-          display: 'flex',
-          fontFamily: 'helvetica',
-          flexDirection: 'row',
-          alignItems: 'flex-start',
-          justifyContent: 'flex-start',
-        }}
-      >
+    <nav className="main-menu"> 
         <div>
-          <a href="#">About Me</a>
+          <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>About Me</Link>
         </div>
         <div>
-          <a href="/portfolio">Portfolio</a>
+          <Link to="/portfolio" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
+        </div>
+       <div>
+          <Link to="/contact" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Contact</Link>
         </div>
         <div>
-          <a href="/">Register</a>
+          <Link to="/resume" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Resume</Link>
         </div>
-        <div>
-          <a href="/contact">Contact</a>
-        </div>
-        <div>
-          <a href="/resume">Resume</a>
-        </div>
-      </section>
     </nav>
   );
 }
