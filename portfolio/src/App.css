@@ -67,7 +67,7 @@ background-size: cover;
 .main-section {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto 200px;
+    margin: 0 auto 50px;
 }
 
 .main-section h1 {
@@ -90,13 +90,17 @@ background-size: cover;
     justify-content: stretch;
     align-items: start;
     column-gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .portfolio .card-holder .card {
-    flex: 1 0 30%;
+    flex: 0 0 30%;
     background: #fff;
     padding: 5px;
     text-align: center;
+    min-height: 345px;
 }
 
 .card-holder .card img {
@@ -114,5 +118,68 @@ background-size: cover;
     color: #000;
     display: block;
     text-decoration: underline;
-    margin-bottom: .5rem;
+    margin-bottom: 1em;
+}
+
+.contact-wrap {
+    text-align: left;
+    
+}
+
+.contact-wrap  form input, .contact-wrap  form textarea {
+    display: block;
+    width: 300px;
+    margin: 0 0 1.5em;
+    padding: 5px;
+    color: #000;
+}
+
+.contact-wrap  form textarea {
+    height: 50px;
+}
+
+.contact-wrap  form input[type="submit"] {
+    width: auto;
+    color: #000;
+    font-size: 18px;
+}
+
+.contact-wrap  form label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.contact-wrap .error-text {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.resume-wrap a {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.resume-wrap ul {
+    padding: 0 0 0 40px;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.footer-wrap {
+    padding: 100px 20px;
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 900px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+} 
+.footer-wrap img {
+    max-width: 100px;
+    height: auto;
+    flex: 0 0 auto;
 }

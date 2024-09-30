@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import AboutMe from './components/about-me';
 import Portfolio from './components/portfolio';
-// import Contact from './components/contact';
-// import Resume from './components/resume';
+import Contact from './components/contact';
+import Resume from './components/resume';
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -23,14 +23,14 @@ const router = createBrowserRouter([
         path: '/portfolio',
         element: <Portfolio />,
       },
-    //   {
-    //     path: '/contact',
-    //     element: <Contact />,
-    //   },
-    //   {
-    //     path: '/resume',
-    //     element: <Resume />,
-    //   },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
+      },
     ],
   },
 ]);

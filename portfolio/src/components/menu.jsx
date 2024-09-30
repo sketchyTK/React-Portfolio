@@ -7,13 +7,13 @@ export default function Menu() {
           <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>About Me</Link>
         </div>
         <div>
-          <Link to="/portfolio" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
+          <Link to="/portfolio" className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
         </div>
        <div>
-          <Link to="/contact" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Contact</Link>
+          <Link to="/contact" className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
         </div>
         <div>
-          <Link to="/resume" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>Resume</Link>
+          <Link to="/resume" className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}>Resume</Link>
         </div>
     </nav>
   );
