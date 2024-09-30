@@ -15,15 +15,22 @@ function Form() {
         } else if (inputType === 'formName') {
         setformName(inputValue);
         } 
+      };
+    const onBlurEmailValidation = (e) => {
         if (!validateEmail(email)) {
       setEmailErrorMessage('Email is invalid');
-        } else {setEmailErrorMessage('');}
+        } else {
+        setEmailErrorMessage('');}
+        };
+    const onBlurValidation = (e) => {
         if (!formName || !email) {
       setErrorMessage('* Name and Email Field Are Required');
-        }
-      return;
-    };
- 
+        }  else {
+        setErrorMessage('');}
+        return;
+        };
+      
+
   return (
     <div className="container text-center">
       <form className="form">
@@ -32,6 +39,7 @@ function Form() {
           value={formName}
           name="formName"
           onChange={handleInputChange}
+          onBlur={onBlurValidation}
           type="text"
           placeholder="Name"
         />
@@ -40,6 +48,7 @@ function Form() {
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={onBlurEmailValidation}
           type="email"
           placeholder="Email"
         />
