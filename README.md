@@ -1,6 +1,8 @@
 # React Portfolio
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
+<img src="readme-screenshot.png" alt="Screenshot of portfolio" width="100%" height="auto">
+
 ## Description
 
 Professional Portfolio of work build using React.
