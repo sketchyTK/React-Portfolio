@@ -18,7 +18,7 @@ body{
     margin: 0 auto;
     padding: 0;
     background-color:#6a80b8 ;
-    font-family: Helvetica, sans-serif;
+    font-family: Futura, sans-serif;
 }
 
 .header-bg {
@@ -45,10 +45,14 @@ background-size: cover;
     font-size: 2.5em;
 }
 
+.header-wrap p a {
+    text-decoration: none;
+}
+
 .main-menu {
     flex: 1 0 75%;
     display: flex;
-    font-family: helvetica;
+    font-family: Futura, sans-serif;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
@@ -58,10 +62,12 @@ background-size: cover;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
 }
 
 .main-menu a.nav-link.active {
-    text-decoration: underline;
+    border-bottom: 1px solid #fff;
 }
 
 .main-section {
@@ -72,12 +78,16 @@ background-size: cover;
 
 .main-section h1 {
     margin-bottom: 1rem;
+    text-align: center;
 
 }
 
 .main-section .about-me img {
     border-radius: 100%;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .main-section p {
@@ -183,4 +193,25 @@ background-size: cover;
     max-width: 100px;
     height: auto;
     flex: 0 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .header-wrap, .main-menu, .footer-wrap {
+        flex-direction:column;
+        padding: 5% 10px;
+    }
+    .header-wrap p {
+        margin-bottom: .5em;
+    }
+    .main-menu a, .footer-wrap a {
+        margin-bottom: 1em;
+        display: block;
+    }
+    .main-section {
+        padding: 10px;
+    }
+
+    .portfolio .card-holder .card {
+        flex: 0 0 100%;
+    }
 }

@@ -3,7 +3,7 @@ export default function Header() {
 
     return (
         <div className="header-wrap">
-            <p>Tony Kinney</p>
+            <p><a href="/">Tony Kinney</a></p>
             <Menu />
         </div>
     )

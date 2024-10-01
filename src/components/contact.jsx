@@ -18,13 +18,13 @@ function Form() {
       };
     const onBlurEmailValidation = (e) => {
         if (!validateEmail(email)) {
-      setEmailErrorMessage('Email is invalid');
+      setEmailErrorMessage('Email is invalid ');
         } else {
         setEmailErrorMessage('');}
         };
     const onBlurValidation = (e) => {
-        if (!formName || !email) {
-      setErrorMessage('* Name and Email Field Are Required');
+        if (!formName) {
+      setErrorMessage('* Name is Required');
         }  else {
         setErrorMessage('');}
         return;
@@ -43,6 +43,11 @@ function Form() {
           type="text"
           placeholder="Name"
         />
+          {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
         <label>Email Address:*</label>
         <input
           value={email}
@@ -61,11 +66,7 @@ function Form() {
         <textarea name="postContent" />
         <input type="submit" value="Submit" />
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+
     </div>
   );
 }
