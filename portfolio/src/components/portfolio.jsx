@@ -5,7 +5,7 @@ export default function aboutMe() {
             <h1>Portfolio</h1>
             <section className="card-holder">
                 <div className="card">
-                    <img src="./src/assets/mario-randomizer-card.png" alt="Mario Cosplay Randomizer application screenshot" />
+                    <img src="./assets/mario-randomizer-card.png" alt="Mario Cosplay Randomizer application screenshot" />
                     <h2>
                         Mario Cosplay Randomizer
                     </h2>
@@ -17,7 +17,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <img src="./src/assets/vehicle-builder-gif.gif" alt="Animated gif rotating images of a tow truck, car, and a motorcycle doing a wheelie" />
+                    <img src="./assets/vehicle-builder-gif.gif" alt="Animated gif rotating images of a tow truck, car, and a motorcycle doing a wheelie" />
                     <h2>
                         Vehicle Builder
                     </h2>
@@ -29,7 +29,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <img src="./src/assets/weather-dashboard-card.png" alt="5-Day Weather Forecast" />
+                    <img src="./assets/weather-dashboard-card.png" alt="5-Day Weather Forecast" />
                     <h2>
                         Weather Dashboard
                     </h2>
@@ -41,7 +41,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <img src="./src/assets/readme-project-card.png" alt="GitHub Readme Template" />
+                    <img src="./assets/readme-project-card.png" alt="GitHub Readme Template" />
                     <h2>
                         README Generator
                     </h2>
@@ -53,7 +53,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <img src="./src/assets/first-blog-card.png" alt="Blog page with form" />
+                    <img src="./assets/first-blog-card.png" alt="Blog page with form" />
                     <h2>
                         My First Blog
                     </h2>
@@ -65,7 +65,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <img src="./src/assets/prework-card.png" alt="Prework Study Guide webpage screenshot" />
+                    <img src="./assets/prework-card.png" alt="Prework Study Guide webpage screenshot" />
                     <h2>
                         PreWork Study Guide
                     </h2>

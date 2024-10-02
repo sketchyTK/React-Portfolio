@@ -22,7 +22,7 @@ body{
 }
 
 .header-bg {
-background-image: url("./src/assets/ac-valhalla-bg.png");
+background-image: url("./assets/ac-valhalla-bg.png");
 background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
