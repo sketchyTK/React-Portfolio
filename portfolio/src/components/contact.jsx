@@ -33,6 +33,10 @@ function Form() {
 
   return (
     <div className="container text-center">
+      <p>
+        Note: Form is just for class project and not linked to an email.<br></br>
+        I can be reached at antkinney at gmail dot com or via Github, LinkedIn, or Facebook.
+      </p><br></br>
       <form className="form">
         <label>Name:*</label>
         <input

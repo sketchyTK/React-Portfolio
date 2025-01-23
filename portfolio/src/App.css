@@ -95,6 +95,11 @@ background-size: cover;
     line-height: 2rem;
 }
 
+.portfolio p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .portfolio .card-holder {
     display: flex;
     justify-content: stretch;
@@ -117,6 +122,7 @@ background-size: cover;
     width: 100%;
     height: auto;
     margin-bottom: 1em;
+    border: 1px solid #ccc;
  }
 
 .card-holder .card h2 {
@@ -165,6 +171,13 @@ background-size: cover;
     font-size: 20px;
     margin-bottom: 1em;
 }
+.resume-wrap h2 {
+    margin: 20px 0;
+}
+
+.resume-wrap p {
+    margin-bottom: 20px;
+}
 
 .resume-wrap a {
     margin-bottom: 1em;
@@ -173,9 +186,23 @@ background-size: cover;
 
 .resume-wrap ul {
     padding: 0 0 0 40px;
-    margin: 10px 0;
+    margin: 10px 0 30px;
     font-size: 20px;
     line-height: 2em;
+}
+
+.resume-wrap ul.two-col {
+    display: flex;
+    justify-content: stretch;
+    align-items: start;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.resume-wrap ul.two-col li {
+    width: 30%;
 }
 
 .footer-wrap {
