@@ -42,7 +42,7 @@ export default function aboutMe() {
                     </a>
                 </div>
                 <div className="card">
-                    <a href="https://book-search-engine-sc9n.onrender.com/" target="_blank"><img src="./assets/vehicle-builder-gif.gif" alt="Animated gif rotating images of a tow truck, car, and a motorcycle doing a wheelie" /></a>
+                    <a href="https://book-search-engine-sc9n.onrender.com/" target="_blank"><img src="./assets/book-search-card.jpg" alt="Hand pointing at a book" /></a>
                     <h2>
                         Book Search Engine
                     </h2>
