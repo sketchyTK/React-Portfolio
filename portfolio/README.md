@@ -34,4 +34,4 @@ Please View https://opensource.org/licenses/gpl-3.0 for more information on this
 
 ## Live Deployment
 
-<a href="https://www.loom.com/share/fb884c7221a449c9a0d3dcc46191db35?sid=f3ebd2e8-d371-47da-8e0a-3f0e00c056a8">Live Deployment on Render</a>
+<a href="https://react-portfolio-xh14.onrender.com/">Live Deployment on Render</a>
